@@ -1,0 +1,13 @@
+{
+    "name":"Hello wolai",
+    "version":"0.1",
+    "manifest_version": 3,
+    "description":"Says hello to wolai",
+    "permissions": ["tabs","*://*.wolai.com/*"],
+    "content_scripts": [
+        {
+             "matches": ["*://*.wolai.com/*"],
+             "js": ["popup.js"]
+        }
+    ]
+}
